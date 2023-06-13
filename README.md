@@ -1,9 +1,4 @@
-# curriculum-databases-projects-template
-
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
-
-
+# Vet clinic database
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
@@ -65,15 +60,16 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [your_project_name] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> This project involves the creation of a relational database to store animals' information for a vet clinic. The database will have a table to store animal records, and we will perform data insertion and querying operations on it.
 
-**[your_project__name]** is a...
+**[your_project__name]** Vet Clinic Database
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
+-Relational Database: PostgreSQL
+-Programming Language: SQL
+-Database Management System: PostgreSQL
 
 <details>
   <summary>Client</summary>
@@ -102,27 +98,18 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Database Creation and Table Schema: Create a relational database named "vet_clinic" and define a table named "animals" to store animal information.]**
+- **[Data Insertion: Insert specific animal data into the "animals" table, including details such as name, date of birth, weight, neutered status, and escape attempts.]**
+- **[Data Querying: Write SQL queries to retrieve information from the "animals" table based on criteria such as name, birth year, neutered status, escape attempts, and weight]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](<replace-with-your-deployment-URL>)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -130,95 +117,56 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
+- PostgreSQL installed on your machine. You can download it from the [official website](https://www.postgresql.org/download/).
 
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  cd your-folder
+  git clone https://github.com/muneeb3123/vet-clinic-database
 ```
---->
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
+Navigate into your project directory and set up your database:
 
 ```sh
-  cd my-project
-  gem install
+  cd your-project
+  psql -U postgres -f schema.sql
 ```
---->
 
 ### Usage
 
-To run the project, execute the following command:
+To interact with the database, open PostgreSQL and connect to the database:
 
-<!--
-Example command:
-
+Connect to database
 ```sh
-  rails server
+  psql -U postgres -d vet_clinic
 ```
---->
 
 ### Run tests
 
-To run tests, run the following command:
-
-<!--
-Example command:
+To run tests, run the following command (functionality will be added in the future):
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  // command to run tests will be available in the future.
 ```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Muneeb UR Rehman**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@muneeb3123](https://github.com/muneeb3123)
+- Twitter: [@Hafizabd4](https://twitter.com/Hafizabd4)
+- LinkedIn: (https://www.linkedin.com/in/muneeb-rehman-01b6bb193/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,9 +176,9 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Building Data Structure:]**
+- [ ] **[SQL Queries for Data Manipulation]**
+- [ ] **[Database Performance Audit]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -248,9 +196,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+**please show your support to improve my skills .this will help me to work hard Give a ⭐️ if you like this project!**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -260,7 +206,7 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank to everyone who watch my code and like it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -268,24 +214,20 @@ I would like to thank...
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **Did you create this project from scratch?**
 
-- **[Question_1]**
+  - Yes, and for that reason I learned a lot.
 
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./License.md) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
