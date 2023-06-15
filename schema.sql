@@ -9,8 +9,8 @@ CREATE TABLE animals (
     weight_kg DECIMAL(5, 2),
     species_id INT,
     owner_id INT,
-    FOREIGN KEY(owner_id) REFERENCES owners(id),
-    FOREIGN KEY(species_id) REFERENCES species(id),
+    FOREIGN KEY(owner_id) REFERENCES owners(id) ON DELETE CASCADE,
+    FOREIGN KEY(species_id) REFERENCES species(id) ON DELETE CASCADEs,
     PRIMARY KEY(id)
 );
 
