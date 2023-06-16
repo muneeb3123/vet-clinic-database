@@ -44,25 +44,26 @@ INSERT INTO vets (name, age, date_of_graduation) VALUES ('Jack Harkness', 38, '2
 
 -- INSERT INTO SPECIALIZATION TABLE
 INSERT INTO specializations (vet_id, species_id)
-SELECT
+VALUES (
     (SELECT id FROM vets WHERE name = 'William Tatcher'),
-    (SELECT id FROM species WHERE name = 'Pokemon');
-
+    (SELECT id FROM species WHERE name = 'Pokemon')
+);
 INSERT INTO specializations (vet_id, species_id)
-SELECT
+VALUES (
     (SELECT id FROM vets WHERE name = 'Stephanie Mendez'),
-    (SELECT id FROM species WHERE name IN ('Pokemon'));
+    (SELECT id FROM species WHERE name IN ('Pokemon'))
+);
 
 INSERT INTO specializations (vet_id, species_id)
-SELECT
+VALUES (
     (SELECT id FROM vets WHERE name = 'Stephanie Mendez'),
-    (SELECT id FROM species WHERE name IN ('Digimon'));
-
+    (SELECT id FROM species WHERE name IN ('Digimon'))
+);
 INSERT INTO specializations (vet_id, species_id)
-SELECT
+VALUES (
     (SELECT id FROM vets WHERE name = 'Jack Harkness'),
-    (SELECT id FROM species WHERE name = 'Digimon');
-
+    (SELECT id FROM species WHERE name = 'Digimon')
+);
 -- INSERT INTO visits TABLE
 INSERT INTO visits (vet_id, animal_id, visit_date)
 VALUES (
