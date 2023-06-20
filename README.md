@@ -1,4 +1,4 @@
-# Vet clinic database
+# Vet Clinic Database
 
 ## Getting Started
 
