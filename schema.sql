@@ -63,13 +63,11 @@ CREATE TABLE visits (
 /*add a column named visist_total to the table of animals, to store total number of visits for specific animal*/
 ALTER TABLE animals
 ADD COLUMN visits_total int DEFAULT 0;
-create index idx_visits_vet_id on visits(vet_id) where vet_id =2;
 
 -- ADD INDEX ON email in owners TABLE TO REDUCE EXECUTION TIME
 CREATE INDEX idx_owners_email ON owners (email);
-EXPLAIN ANALYZE SELECT * FROM vet_summary where vet_id = 2;
 
- CREATE TABLE vet_summary TO STORE TOTAL VISITS OF EVERY VET
+-- CREATE TABLE vet_summary TO STORE TOTAL VISITS OF EVERY VET
 CREATE TABLE vet_summary (
   vet_id int REFERENCES vets(id), 
   total_visits int

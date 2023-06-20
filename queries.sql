@@ -146,6 +146,7 @@ LIMIT 1;
 
 /*query after improving execution time*/
 EXPLAIN ANALYZE SELECT visits_total FROM animals where id = 4;
+
 EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
 
-EXPLAIN ANALYZE SELECT * FROM vet_summary where vet_id = 2;
+EXPLAIN ANALYZE SELECT * FROM vet_summary where vet_id =2;
