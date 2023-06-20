@@ -1,4 +1,5 @@
 # Vet clinic database
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
@@ -29,7 +30,6 @@ REQUIRED SECTIONS:
 
 After you're finished please remove all the comments and instructions!
 -->
-
 
 <!-- TABLE OF CONTENTS -->
 
@@ -66,6 +66,7 @@ After you're finished please remove all the comments and instructions!
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
+
 -Relational Database: PostgreSQL
 -Programming Language: SQL
 -Database Management System: PostgreSQL
@@ -105,7 +106,6 @@ After you're finished please remove all the comments and instructions!
 
 <!-- LIVE DEMO -->
 
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -117,7 +117,6 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 - PostgreSQL installed on your machine. You can download it from the [official website](https://www.postgresql.org/download/).
-
 
 ### Setup
 
@@ -142,6 +141,7 @@ Navigate into your project directory and set up your database:
 To interact with the database, open PostgreSQL and connect to the database:
 
 Connect to database
+
 ```sh
   psql -U postgres -d vet_clinic
 ```
@@ -166,6 +166,12 @@ To run tests, run the following command (functionality will be added in the futu
 - GitHub: [@muneeb3123](https://github.com/muneeb3123)
 - Twitter: [@Hafizabd4](https://twitter.com/Hafizabd4)
 - LinkedIn: (https://www.linkedin.com/in/muneeb-rehman-01b6bb193/)
+
+👤 **Haftamu Desta Yemata**
+
+- GitHub: [@haftamu](https://github.com/haftamudesta)
+- Twitter: [@DestaHaftamu](https://twitter.com/DestaHftamu?t=NQ4ovkdWbsfsjh62NFEXFg&s=09)
+- LinkedIn: [Haftamu Desta](https://www.linkedin.com/in/haftamu-desta-795791a1/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -217,16 +223,12 @@ I would like to thank to everyone who watch my code and like it.
 
   - Yes, and for that reason I learned a lot.
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./License.md) licensed.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
