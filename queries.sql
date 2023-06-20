@@ -144,6 +144,7 @@ GROUP BY species.name
 ORDER BY num_visits DESC
 LIMIT 1;
 
+
 /*query after improving execution time*/
 EXPLAIN ANALYZE SELECT visits_total FROM animals where id = 4;
 
