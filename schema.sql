@@ -70,5 +70,5 @@ CREATE INDEX idx_owners_email ON owners (email);
 -- CREATE TABLE vet_summary TO STORE TOTAL VISITS OF EVERY VET
 CREATE TABLE vet_summary (
   vet_id int REFERENCES vets(id), 
-  total_visits int
+  total_visits int
 );
