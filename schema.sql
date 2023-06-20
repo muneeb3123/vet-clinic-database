@@ -24,9 +24,6 @@ CREATE TABLE owners (
     age INT,
     PRIMARY KEY(id)
 );
--- ADD INDEX ON email in owners TABLE TO REDUCE EXECUTION TIME
-CREATE INDEX idx_owners_email ON owners (email);
-
 
 -- Add an email column to owners table
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
@@ -63,13 +60,10 @@ CREATE TABLE visits (
     PRIMARY KEY (vet_id, visit_date)
 );
 
--- ADD INDEX ON animal_id,vet_id in VISIT TABLE TO REDUCE EXECUTION TIME
-CREATE INDEX idx_visits_animal_id ON visits (animal_id);
-CREATE INDEX idx_visits_vet_id ON visits (vet_id);
+/*add a column named visist_total to the table of animals, to store total number of visits for specific animal*/
+ALTER TABLE animals
+ADD COLUMN visits_total int DEFAULT 0;
+create index idx_visits_vet_id on visits(vet_id) where vet_id =2;
 
-
-
-
-
-
-
+-- ADD INDEX ON email in owners TABLE TO REDUCE EXECUTION TIME
+CREATE INDEX idx_owners_email ON owners (email);
