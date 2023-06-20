@@ -219,6 +219,8 @@ SELECT COUNT(*)
 FROM visits
 WHERE visits.animal_id = animals.id
 );
+INSERT TOTAL VISITS by vet  IN vet_summary
+INSERT INTO vet_summary (vet_id,total_visits) SELECT vet_id,count(*) FROM visits GROUP BY vet_id;
 
 
 
