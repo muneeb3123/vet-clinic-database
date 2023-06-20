@@ -57,6 +57,11 @@ CREATE TABLE visits (
     FOREIGN KEY (animal_id) REFERENCES animals (id) ON DELETE CASCADE,
     PRIMARY KEY (vet_id, visit_date)
 );
+CREATE TABLE vet_summary TO STORE TOTAL VISITS OF EVERY VET
+CREATE TABLE vet_summary (
+  vet_id int REFERENCES vets(id), 
+  total_visits int
+);
 
 
 

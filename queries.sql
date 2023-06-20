@@ -143,3 +143,5 @@ WHERE vets.name = 'Maisy Smith'
 GROUP BY species.name
 ORDER BY num_visits DESC
 LIMIT 1;
+
+EXPLAIN ANALYZE SELECT * FROM vet_summary where vet_id = 2;
